@@ -3,7 +3,15 @@ package chap_07.Camera;
 public class SpeedCam extends Camera {
 
     public SpeedCam() {
-        this.name = "과속 단속 카메라";
+       // this.name = "과속 단속 카메라";
+        super("과속 단속 카메라");
+    }
+
+    public void takePicture() {
+        // 사진 촬영
+        super.takePicture();
+        checkSpeed();
+        recognizeLicensePlate();
     }
 
     public void checkSpeed() {

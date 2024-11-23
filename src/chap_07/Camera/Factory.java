@@ -4,7 +4,12 @@ public class Factory extends Camera {  // 자식 클래
 
 
     public Factory() {
-        this.name = "공장 카메라";
+       // this.name = "공장 카메라";
+        super("공장카메라");
+    }
+    public void recordVideo() {
+        super.recordVideo();
+        detectFire();
     }
 
 
