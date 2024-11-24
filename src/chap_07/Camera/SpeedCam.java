@@ -4,7 +4,7 @@ public class SpeedCam extends Camera {
 
     public SpeedCam() {
        // this.name = "과속 단속 카메라";
-        super("과속 단속 카메라");
+        super("과속 단속 카메라ß");
     }
 
     public void takePicture() {
