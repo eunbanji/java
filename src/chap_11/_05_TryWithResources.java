@@ -1,5 +1,7 @@
 package chap_11;
 
+import java.io.BufferedWriter;
+
 public class _05_TryWithResources {
     public static void main(String[] args) {
         MyFileWriter writer1 = null;
@@ -15,6 +17,15 @@ public class _05_TryWithResources {
                 throw new RuntimeException(e);
             }
         }
+        System.out.println("------------------------");
+
+        try (MyFileWriter writer2 = new MyFileWriter()) {
+            writer2.write("빵이 먹고 싶어요.");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        BufferedWriter bw = null;
     }
 }
 
