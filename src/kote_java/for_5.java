@@ -6,7 +6,7 @@ public class for_5 {
 
         int T = scanner.nextInt();
 
-        if (T %4 ==0){
+        if (T % 4 ==0){
             for (int i=1; i <= (T/4); i++ ) {
                 System.out.print("long");
             }
