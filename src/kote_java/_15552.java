@@ -10,7 +10,6 @@ public class _15552 {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     StringTokenizer st;
-    int T
 
 
 
